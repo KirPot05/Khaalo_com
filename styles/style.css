@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+#navbar{
+
+    display: flex;    
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+
+
+/* Image Styling */
+#logo{
+    margin: 20px 24px;
+}
+
+
+#logo img{
+    height: 75px;
+    margin: 3px 6px;
+}
+
+
+
+/* Navbar Styling */
+#navbar ul{
+    display: flex;
+}
+
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.4rem;
+}
+
+#navbar ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 5px 23px;
+    border-radius: 20px;
+    
+}
+
+#navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    transition-duration: 0.4s;
+}   
+
+
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 542px;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 200px;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+}
+
+#home p{
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    height: 623px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background: url("../cover.jpg") no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+
+
+
+/* Services Section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+#services .box{
+    border: 3px solid brown;
+    padding: 34px;
+    margin: 20px 6px;
+    border-radius: 23px;
+    background-color: rgb(231, 223, 221);
+}
+
+#services .box img{
+    display: block;
+    margin: auto;
+    height: 160px;
+}
+
+#services .box p{
+    font-size: 1.2rem;
+}
+
+
+
+
+/* Clients Section */
+#client-section{
+    /* height: 344px; */
+    position: relative;
+    
+}
+
+#client-section::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: url("../assets/food.jpg");
+    z-index: -1;
+    opacity: 0.4;
+}
+
+
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#clients img{
+    height: 120px;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: url("../assets/Service.jpg") no-repeat center center/cover;
+    opacity: 0.3;
+}
+
+
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input, #contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 3px 4px 10px grey;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+}
+
+
+
+
+/* Footer */
+footer{
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    font-size: 1.12rem;
+}
+
+
+
+
+
+/* Utility Classes */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    margin: 17px;
+    border: 2px solid white;
+    color: white;
+    border-radius: 10px;
+    background-color: brown;
+    font-size: 1.5rem;
+    cursor: pointer;
+}   
+
+.center{
+    text-align: center;
+}

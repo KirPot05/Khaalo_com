@@ -1,0 +1,94 @@
+/* Navigation Section */
+#navbar{
+    flex-direction: column;
+}
+
+#navbar ul{
+    padding-bottom: 10px;
+}
+
+#navbar ul li a{
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0px 8px;
+}
+
+
+
+
+/* Home Section */
+#home{
+    height: 430px;
+    padding: 3px 28px;
+}   
+
+#home::before{
+    height: 591px;
+}
+
+#home p{
+    font-size: 13px;
+}
+
+/* Services Section */
+#services{
+    flex-direction: column;
+}
+
+#services .box{
+    padding: 15px;
+    margin: 4px 6px;
+}
+
+#services .box img{
+    width: 133px;
+    height: auto;
+}
+
+#services .box p{
+    font-size: 13px;
+}
+
+
+
+/* Clients Section */
+#clients{
+    flex-wrap: wrap;
+}
+
+#clients img{
+    width: 66px;
+    height: 66px;
+    /* padding: 2px 6px; */
+}
+
+#clients .client-item #skype, #clients .client-item #micro{
+    width: 160px;
+}
+
+
+
+/* Contact Us Section */
+#contact-box form{
+    width: 80%;
+}
+
+
+
+
+/* Footer Section */
+
+
+/* Utility Section */
+.h-primary{
+    font-size: 26px;
+}
+
+.h-secondary{
+    font-size: 20px;
+}
+
+.btn{
+    font-size: 13px;
+    padding: 4px 9px;
+}
